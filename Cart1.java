@@ -4,11 +4,11 @@ private String itemName;
 private double itemPrice;
 private String itemBrand;
 
-void Cart1()
+void Cart1()                       // default constructor
 {
-
+                                                    
 }
-Cart1(String itemName,double itemPrice,String itemBrand)
+Cart1(String itemName,double itemPrice,String itemBrand)               // parameterised constructor
 {
 	System.out.println("-------constructor------");
 this.itemName=itemName;
@@ -16,7 +16,7 @@ this.itemBrand=itemBrand;
 this.itemPrice=itemPrice;
 
 }
-//getters and setters
+                                                                     //getters and setters
 String getItemName()
 {
 	return this.itemName;
@@ -41,7 +41,7 @@ void setItemPrice(double itemPrice)
 {
 	this.itemPrice=itemPrice;
 }
-void display()
+void display()                                                            // method to display
 {
 	System.out.println("Name of Item:"+itemName);
 	System.out.println("Name of The Brand:"+itemBrand);
@@ -49,11 +49,11 @@ void display()
 	
 }
  
- public static void main(String...args)
+ public static void main(String...args)                                    // main method
  {
 	 
 	 Cart1 c1= new Cart1("Mobile",20000,"Xiomi");
-	 c1.display();
+	 c1.display();                                             // calling main method to display
 	 
 	 
  }
